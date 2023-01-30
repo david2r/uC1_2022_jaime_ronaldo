@@ -1,0 +1,528 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/prueva.o
+ISRVectLowPriority CODE 0 8 8 10 1 2
+CODE - 0 26 26 EC 1 1
+code CODE 0 26 26 132 1 2
+int0 CODE 0 18 18 E 1 2
+resetVect CODE 0 0 0 4 1 2
+udata_acs COMRAM 1 500 500 6 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 4-7 1
+SFR 158-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST 158-1FFFF 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FFFF 1
+CODE 4-7 1
+CODE 158-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 4-7 1
+BIGSFR 158-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 506-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/prueva.o
+26 CODE ABS >43:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+2A CODE ABS >44:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+2E CODE ABS >45:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+32 CODE ABS >46:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+36 CODE ABS >48:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+38 CODE ABS >49:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+3A CODE ABS >50:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+3C CODE ABS >51:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+40 CODE ABS >52:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+44 CODE ABS >53:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+46 CODE ABS >54:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+4A CODE ABS >55:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+4E CODE ABS >56:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+52 CODE ABS >58:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+54 CODE ABS >59:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+56 CODE ABS >60:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+5A CODE ABS >68:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+5C CODE ABS >69:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+5E CODE ABS >70:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+60 CODE ABS >71:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+62 CODE ABS >72:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+64 CODE ABS >73:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+66 CODE ABS >74:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+6A CODE ABS >75:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+6C CODE ABS >76:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+6E CODE ABS >77:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+72 CODE ABS >79:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+74 CODE ABS >80:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+78 CODE ABS >81:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+7C CODE ABS >83:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+7E CODE ABS >84:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+82 CODE ABS >87:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+84 CODE ABS >88:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+88 CODE ABS >89:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+8C CODE ABS >91:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+8E CODE ABS >92:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+90 CODE ABS >93:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+92 CODE ABS >94:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+94 CODE ABS >95:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+96 CODE ABS >96:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+9A CODE ABS >99:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+9C CODE ABS >100:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+9E CODE ABS >101:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A0 CODE ABS >102:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A2 CODE ABS >103:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A4 CODE ABS >104:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A6 CODE ABS >105:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A8 CODE ABS >106:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+AA CODE ABS >107:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+AC CODE ABS >108:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+AE CODE ABS >109:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+B0 CODE ABS >112:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+B2 CODE ABS >113:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+B4 CODE ABS >114:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+B6 CODE ABS >115:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+B8 CODE ABS >116:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+BA CODE ABS >117:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+BC CODE ABS >121:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+BE CODE ABS >122:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+C0 CODE ABS >123:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+C2 CODE ABS >124:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+C4 CODE ABS >125:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+C6 CODE ABS >128:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+C8 CODE ABS >129:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+CA CODE ABS >130:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+CC CODE ABS >131:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+CE CODE ABS >132:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+D0 CODE ABS >135:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+D2 CODE ABS >136:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+D4 CODE ABS >137:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+D6 CODE ABS >138:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+D8 CODE ABS >139:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+DA CODE ABS >140:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+DC CODE ABS >144:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+DE CODE ABS >145:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E0 CODE ABS >146:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E2 CODE ABS >148:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E4 CODE ABS >149:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E6 CODE ABS >150:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E8 CODE ABS >152:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+EA CODE ABS >153:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+EC CODE ABS >154:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+EE CODE ABS >155:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+F0 CODE ABS >164:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+F2 CODE ABS >165:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+F4 CODE ABS >166:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+F6 CODE ABS >167:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+F8 CODE ABS >168:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+FA CODE ABS >170:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+FC CODE ABS >171:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+FE CODE ABS >172:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+100 CODE ABS >175:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+102 CODE ABS >176:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+104 CODE ABS >177:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+106 CODE ABS >180:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+108 CODE ABS >181:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+10A CODE ABS >182:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+10C CODE ABS >184:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+10E CODE ABS >185:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+110 CODE ABS >186:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+8 ISRVectLowPriority CODE >29:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+A ISRVectLowPriority CODE >30:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+E ISRVectLowPriority CODE >32:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+10 ISRVectLowPriority CODE >35:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+12 ISRVectLowPriority CODE >36:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+16 ISRVectLowPriority CODE >39:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+18 int0 CODE >19:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+1A int0 CODE >20:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+1E int0 CODE >22:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+20 int0 CODE >23:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+24 int0 CODE >25:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+0 resetVect CODE >14:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X\prueva.s
+26 code CODE >20:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+28 code CODE >21:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+2A code CODE >23:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+2C code CODE >24:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+2E code CODE >25:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+32 code CODE >26:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+34 code CODE >32:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+36 code CODE >33:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+38 code CODE >36:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+3A code CODE >37:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+3E code CODE >39:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+40 code CODE >40:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+42 code CODE >41:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+46 code CODE >42:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+48 code CODE >48:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+4A code CODE >49:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+4C code CODE >51:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+4E code CODE >52:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+50 code CODE >53:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+54 code CODE >54:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+56 code CODE >60:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+58 code CODE >61:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+5A code CODE >64:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+5E code CODE >66:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+60 code CODE >67:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+62 code CODE >68:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+66 code CODE >69:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+68 code CODE >75:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+6A code CODE >76:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+6C code CODE >79:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+70 code CODE >81:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+72 code CODE >82:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+74 code CODE >83:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+78 code CODE >84:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+7A code CODE >90:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+7C code CODE >91:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+7E code CODE >93:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+80 code CODE >94:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+82 code CODE >95:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+86 code CODE >96:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+88 code CODE >102:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+8A code CODE >103:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+8C code CODE >106:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+90 code CODE >108:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+92 code CODE >109:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+94 code CODE >110:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+98 code CODE >111:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+9A code CODE >117:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+9C code CODE >118:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+9E code CODE >121:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+A2 code CODE >123:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+A4 code CODE >124:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+A6 code CODE >125:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+AA code CODE >126:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+AC code CODE >133:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+AE code CODE >134:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+B0 code CODE >136:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+B2 code CODE >137:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+B4 code CODE >140:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+B8 code CODE >142:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+BA code CODE >143:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+BC code CODE >144:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+C0 code CODE >145:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+C2 code CODE >146:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+C6 code CODE >147:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+C8 code CODE >154:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+CA code CODE >155:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+CC code CODE >157:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+CE code CODE >158:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+D0 code CODE >160:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+D2 code CODE >161:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+D4 code CODE >162:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+D8 code CODE >163:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+DA code CODE >164:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+DE code CODE >165:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+E0 code CODE >172:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+E2 code CODE >173:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+E4 code CODE >175:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+E6 code CODE >176:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+E8 code CODE >178:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+EA code CODE >179:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+EC code CODE >180:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+F0 code CODE >181:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+F2 code CODE >182:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+F6 code CODE >183:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+F8 code CODE >190:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+FA code CODE >191:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+FC code CODE >193:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+FE code CODE >194:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+100 code CODE >196:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+102 code CODE >197:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+104 code CODE >198:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+108 code CODE >199:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+10A code CODE >200:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+10E code CODE >201:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+110 code CODE >208:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+112 code CODE >209:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+114 code CODE >211:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+116 code CODE >212:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+118 code CODE >214:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+11A code CODE >215:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+11C code CODE >216:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+120 code CODE >217:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+122 code CODE >218:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+126 code CODE >219:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+128 code CODE >226:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+12A code CODE >227:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+12C code CODE >229:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+12E code CODE >230:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+130 code CODE >232:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+132 code CODE >233:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+134 code CODE >234:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+138 code CODE >235:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+13A code CODE >236:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+13E code CODE >237:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+140 code CODE >244:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+142 code CODE >245:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+144 code CODE >247:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+146 code CODE >248:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+148 code CODE >250:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+14A code CODE >251:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+14C code CODE >252:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+150 code CODE >253:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+152 code CODE >254:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+156 code CODE >255:C:\Users\Jaime\Documents\CICLO IV\microrepo\uC1_2022_jaime_ronaldo\parcial2_jaime_chiroque_ronaldo_david.X/Retardos_3.inc
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 158 0 ABS 0 - -
+__Hspace_1 506 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 112 0 ABS 0 udata_bank5 -
+__Hudata_bank6 112 0 ABS 0 udata_bank6 -
+__Hudata_bank7 112 0 ABS 0 udata_bank7 -
+__Hudata_bank8 112 0 ABS 0 udata_bank8 -
+__Hudata_bank9 112 0 ABS 0 udata_bank9 -
+__HISRVectLowPriority 18 0 CODE 0 ISRVectLowPriority -
+__Hudata_bank10 112 0 ABS 0 udata_bank10 -
+__Hudata_bank11 112 0 ABS 0 udata_bank11 -
+__Hudata_bank12 112 0 ABS 0 udata_bank12 -
+__Hudata_bank13 112 0 ABS 0 udata_bank13 -
+__Hudata_bank14 112 0 ABS 0 udata_bank14 -
+__Hudata_bank15 112 0 ABS 0 udata_bank15 -
+__Hudata_bank16 112 0 ABS 0 udata_bank16 -
+__Hudata_bank17 112 0 ABS 0 udata_bank17 -
+__Hudata_bank18 112 0 ABS 0 udata_bank18 -
+__Hudata_bank19 112 0 ABS 0 udata_bank19 -
+__Hudata_bank20 112 0 ABS 0 udata_bank20 -
+__Hudata_bank21 112 0 ABS 0 udata_bank21 -
+__Hudata_bank22 112 0 ABS 0 udata_bank22 -
+__Hudata_bank23 112 0 ABS 0 udata_bank23 -
+__Hudata_bank24 112 0 ABS 0 udata_bank24 -
+__Hudata_bank25 112 0 ABS 0 udata_bank25 -
+__Hudata_bank26 112 0 ABS 0 udata_bank26 -
+__Hudata_bank27 112 0 ABS 0 udata_bank27 -
+__Hudata_bank28 112 0 ABS 0 udata_bank28 -
+__Hudata_bank29 112 0 ABS 0 udata_bank29 -
+__Hudata_bank30 112 0 ABS 0 udata_bank30 -
+__Hudata_bank31 112 0 ABS 0 udata_bank31 -
+__Hudata_bank32 112 0 ABS 0 udata_bank32 -
+__Hudata_bank33 112 0 ABS 0 udata_bank33 -
+__Hudata_bank34 112 0 ABS 0 udata_bank34 -
+__Hudata_bank35 112 0 ABS 0 udata_bank35 -
+__Hudata_bank36 112 0 ABS 0 udata_bank36 -
+__Hudata_bank37 112 0 ABS 0 udata_bank37 -
+__Hudata_bank38 112 0 ABS 0 udata_bank38 -
+__Hudata_bank39 112 0 ABS 0 udata_bank39 -
+__Hudata_bank40 112 0 ABS 0 udata_bank40 -
+__Hudata_bank41 112 0 ABS 0 udata_bank41 -
+__Hudata_bank42 112 0 ABS 0 udata_bank42 -
+__Hudata_bank43 112 0 ABS 0 udata_bank43 -
+__Hudata_bank44 112 0 ABS 0 udata_bank44 -
+__Hudata_bank45 112 0 ABS 0 udata_bank45 -
+__Hudata_bank46 112 0 ABS 0 udata_bank46 -
+__Hudata_bank47 112 0 ABS 0 udata_bank47 -
+__Hudata_bank48 112 0 ABS 0 udata_bank48 -
+__Hudata_bank49 112 0 ABS 0 udata_bank49 -
+__Hudata_bank50 112 0 ABS 0 udata_bank50 -
+__Hudata_bank51 112 0 ABS 0 udata_bank51 -
+__Hudata_bank52 112 0 ABS 0 udata_bank52 -
+__Hudata_bank53 112 0 ABS 0 udata_bank53 -
+__Hudata_bank54 112 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/debug/prueva.o
+__Hedata 112 0 ABS 0 edata -
+__Hudata 112 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 112 0 ABS 0 edata -
+__Ludata 112 0 ABS 0 udata -
+__HCODE 112 0 ABS 0 CODE -
+__Hcode 112 0 ABS 0 code -
+__Hdata 112 0 ABS 0 data -
+__Hint0 26 0 CODE 0 int0 -
+__LCODE 26 0 ABS 0 CODE -
+__Lcode 112 0 ABS 0 code -
+__Ldata 112 0 ABS 0 data -
+__Lint0 18 0 CODE 0 int0 -
+__S0 158 0 ABS 0 - -
+__S1 506 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 112 0 ABS 0 udata_bank10 -
+__Ludata_bank11 112 0 ABS 0 udata_bank11 -
+__Ludata_bank12 112 0 ABS 0 udata_bank12 -
+__Ludata_bank13 112 0 ABS 0 udata_bank13 -
+__Ludata_bank14 112 0 ABS 0 udata_bank14 -
+__Ludata_bank15 112 0 ABS 0 udata_bank15 -
+__Ludata_bank16 112 0 ABS 0 udata_bank16 -
+__Ludata_bank17 112 0 ABS 0 udata_bank17 -
+__Ludata_bank18 112 0 ABS 0 udata_bank18 -
+__Ludata_bank19 112 0 ABS 0 udata_bank19 -
+__Ludata_bank20 112 0 ABS 0 udata_bank20 -
+__Ludata_bank21 112 0 ABS 0 udata_bank21 -
+__Ludata_bank22 112 0 ABS 0 udata_bank22 -
+__Ludata_bank23 112 0 ABS 0 udata_bank23 -
+__Ludata_bank24 112 0 ABS 0 udata_bank24 -
+__Ludata_bank25 112 0 ABS 0 udata_bank25 -
+__Ludata_bank26 112 0 ABS 0 udata_bank26 -
+__Ludata_bank27 112 0 ABS 0 udata_bank27 -
+__Ludata_bank28 112 0 ABS 0 udata_bank28 -
+__Ludata_bank29 112 0 ABS 0 udata_bank29 -
+__Ludata_bank30 112 0 ABS 0 udata_bank30 -
+__Ludata_bank31 112 0 ABS 0 udata_bank31 -
+__Ludata_bank32 112 0 ABS 0 udata_bank32 -
+__Ludata_bank33 112 0 ABS 0 udata_bank33 -
+__Ludata_bank34 112 0 ABS 0 udata_bank34 -
+__Ludata_bank35 112 0 ABS 0 udata_bank35 -
+__Ludata_bank36 112 0 ABS 0 udata_bank36 -
+__Ludata_bank37 112 0 ABS 0 udata_bank37 -
+__Ludata_bank38 112 0 ABS 0 udata_bank38 -
+__Ludata_bank39 112 0 ABS 0 udata_bank39 -
+__Ludata_bank40 112 0 ABS 0 udata_bank40 -
+__Ludata_bank41 112 0 ABS 0 udata_bank41 -
+__Ludata_bank42 112 0 ABS 0 udata_bank42 -
+__Ludata_bank43 112 0 ABS 0 udata_bank43 -
+__Ludata_bank44 112 0 ABS 0 udata_bank44 -
+__Ludata_bank45 112 0 ABS 0 udata_bank45 -
+__Ludata_bank46 112 0 ABS 0 udata_bank46 -
+__Ludata_bank47 112 0 ABS 0 udata_bank47 -
+__Ludata_bank48 112 0 ABS 0 udata_bank48 -
+__Ludata_bank49 112 0 ABS 0 udata_bank49 -
+__Ludata_bank50 112 0 ABS 0 udata_bank50 -
+__Ludata_bank51 112 0 ABS 0 udata_bank51 -
+__Ludata_bank52 112 0 ABS 0 udata_bank52 -
+__Ludata_bank53 112 0 ABS 0 udata_bank53 -
+__Ludata_bank54 112 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/debug/prueva.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 4 0 CODE 0 resetVect -
+__Ludata_bank5 112 0 ABS 0 udata_bank5 -
+__Ludata_bank6 112 0 ABS 0 udata_bank6 -
+__Ludata_bank7 112 0 ABS 0 udata_bank7 -
+__Ludata_bank8 112 0 ABS 0 udata_bank8 -
+__Ludata_bank9 112 0 ABS 0 udata_bank9 -
+__LresetVect 0 0 CODE 0 resetVect -
+__LISRVectLowPriority 8 0 CODE 0 ISRVectLowPriority -
+__Hudata_acs 112 0 ABS 0 udata_acs -
+__Ludata_acs 112 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+ISRVectLowPriority 0 8 8 10 1
+int0 0 18 18 140 1
+resetVect 0 0 0 4 1
+udata_acs 1 500 500 6 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
